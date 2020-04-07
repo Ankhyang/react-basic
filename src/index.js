@@ -4,6 +4,7 @@ import './index.css';
 // import App from './App';
 import Sister from './Sister'
 import * as serviceWorker from './serviceWorker';
+import 'antd/dist/antd.css';
 
 ReactDOM.render(
   <Sister />,

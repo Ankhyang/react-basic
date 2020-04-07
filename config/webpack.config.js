@@ -380,6 +380,10 @@ module.exports = function(webpackEnv) {
                             '@svgr/webpack?-svgo,+titleProp,+ref![path]',
                         },
                       },
+                      plugins: [
+                        ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+                      ],
+                      compact: true
                     },
                   ],
                 ],
