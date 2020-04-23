@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import store from './store'
-import { changeInputAction, addItemAction, deletItemAction, getTododList } from './store/actionCreators'
+import { changeInputAction, addItemAction, deletItemAction, getMyListAction } from './store/actionCreators'
 
 import TodoListUI from './TodoListUI'
 
@@ -17,7 +17,7 @@ class TodoList extends Component {
         store.subscribe(this.storeChange)  // 订阅Redux的状态
     }
     componentDidMount() {
-        const action = getTododList()
+        const action = getMyListAction()
         store.dispatch(action)
     }
     storeChange() {
