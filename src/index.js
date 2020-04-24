@@ -1,8 +1,15 @@
 import React from 'react'
-
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
 
-import App from './App'
+import TodoList from './TodoList'
+import store from './store'
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+const App = (
+    <Provider store={store}>
+        <TodoList/>
+    </Provider>
+)
+
+ReactDOM.render(App, document.getElementById('root'))
 
