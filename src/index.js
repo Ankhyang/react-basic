@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import ReducerDemo from './ReducerDemo'
+import Example9 from './Example9'
 
-ReactDOM.render(<ReducerDemo/>, document.getElementById('root'))
+ReactDOM.render(<Example9/>, document.getElementById('root'))
